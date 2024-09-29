@@ -869,6 +869,8 @@ body.login {
 .main-navigation .current-menu-item a,
 .main-navigation a:hover {
   color: #faf0ca;
+  font-weight: 500;
+  transition-duration: 0.3s;
 }
 .page-banner {
   background-color: #000;
