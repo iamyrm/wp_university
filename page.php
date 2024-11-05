@@ -2,18 +2,14 @@
 
 while (have_posts()) {
   the_post();
+  pageBanner(array(
+    'title' => 'This is a title',
+    'subtitle' => 'This is subtitle',
+    'photo' => 'https://img.freepik.com/free-photo/clean-shore-ban-stone-trees-green_1417-1275.jpg?t=st=1730806209~exp=1730809809~hmac=10be4f5bbc1428667acaf810af803c91d2908f8f6e29d70f3535a7b14b05238a&w=996',
+  ));
+
 ?>
-  <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri("/assets/images/ocean.jpg"); ?>)"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title">
-        <?php the_title(); ?>
-      </h1>
-      <div class="page-banner__intro">
-        <p>DONT FORGET TO REPLACE ME LATER</p>
-      </div>
-    </div>
-  </div>
+
 
   <div class="container container--narrow page-section">
     <?php
