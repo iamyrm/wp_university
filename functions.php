@@ -20,6 +20,9 @@ function university_features()
 {
     // Adding The dynamic title to each of the pages 
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    add_image_size('professorLandscape', 400, 260, true);
+    add_image_size('professorPortraite', 480, 650, true);
 
     // Refistering the Menus 
     // register_nav_menu('headerMenuLocation','Header Menu');
